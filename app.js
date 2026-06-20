@@ -38,6 +38,7 @@
 
   /* ---------- HERO / COUNTDOWN ---------- */
   function renderHero() {
+    document.querySelector(".badge").textContent = C.athlete.name + "s Laufcoach";
     $("raceName").textContent = C.race.name;
     $("goalTag").textContent = C.race.goal;
     $("raceMeta").textContent =

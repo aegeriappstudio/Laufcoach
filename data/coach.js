@@ -11,9 +11,10 @@ window.COACH = {
    * ATHLET:IN & ZIEL
    * -------------------------------------------------------------------- */
   athlete: {
-    name: "Läufer:in",
+    name: "Dani",
+    age: 39,
     ageGroup: "30–39",
-    hrMax: 181, // entspricht den Pulszonen deiner Galaxy Watch (Zone 5: 163–181)
+    hrMax: 181, // entspricht den Pulszonen deiner Galaxy Watch (Zone 5: 163–181) und max. Puls (220−39≈181)
     startDate: "2026-06-20",
   },
 
