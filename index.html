@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1117" />
+  <title>Laufcoach · Ägeriseelauf</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <!-- Countdown / Header -->
+    <header class="hero">
+      <div class="hero-top">
+        <span class="badge">Dein Laufcoach</span>
+        <span id="goalTag" class="goal-tag"></span>
+      </div>
+      <h1 id="raceName">Ägeriseelauf</h1>
+      <p id="raceMeta" class="race-meta"></p>
+      <div class="countdown" id="countdown"></div>
+      <div class="progressbar"><div id="planProgress" class="progressbar-fill"></div></div>
+      <p id="progressLabel" class="progress-label"></p>
+    </header>
+
+    <!-- Diese Woche -->
+    <section class="card highlight" id="thisWeekCard">
+      <h2 class="section-title">📅 Diese Woche</h2>
+      <div id="thisWeek"></div>
+    </section>
+
+    <!-- Ausgangslage -->
+    <section class="card">
+      <h2 class="section-title">📊 Deine Ausgangslage</h2>
+      <div id="baselineStats" class="stat-grid"></div>
+      <ul id="baselineHighlights" class="bullets"></ul>
+    </section>
+
+    <!-- Zonen -->
+    <section class="card">
+      <h2 class="section-title">❤️ Pulszonen</h2>
+      <div id="hrZones" class="zones"></div>
+      <p id="hrTip" class="tip"></p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">⏱️ Tempozonen & Run/Walk</h2>
+      <div id="paceZones" class="zones"></div>
+      <div id="runWalk" class="runwalk"></div>
+    </section>
+
+    <!-- Gesamtplan -->
+    <section class="card">
+      <h2 class="section-title">🗺️ 5-Wochen-Plan</h2>
+      <div id="weeks" class="weeks"></div>
+    </section>
+
+    <!-- Coach-Notizen -->
+    <section class="card">
+      <h2 class="section-title">🎯 Coach-Tipps</h2>
+      <div id="notes" class="notes"></div>
+    </section>
+
+    <!-- Log -->
+    <section class="card">
+      <h2 class="section-title">📒 Trainings-Log</h2>
+      <p class="tip">Schick mir nach jedem Lauf deine Samsung-Auswertung – ich trage sie hier ein und passe den Plan bei Bedarf an.</p>
+      <div id="logStats" class="stat-grid small"></div>
+      <div id="log" class="log"></div>
+    </section>
+
+    <footer class="foot">
+      <p>Laufcoach · selbstgebaut für den Ägeriseelauf am 24.07.2026.<br/>Kein medizinischer Rat – bei Schmerzen/Beschwerden pausieren.</p>
+    </footer>
+  </main>
+
+  <script src="data/coach.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
