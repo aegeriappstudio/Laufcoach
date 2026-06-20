@@ -25,8 +25,8 @@ window.COACH = {
     location: "Oberägeri (ZG)",
     profile: "Flach, Strasse & aufbereiteter Kies, rund um den Ägerisee, verkehrsfrei",
     aidStationsKm: [3.5, 5.5, 7.0, 11.5],
-    goal: "Run/Walk – gesund und sicher ins Ziel",
-    goalTime: "ca. 1:45–1:55 h",
+    goal: "Run/Walk · Ziel unter 1:40 h",
+    goalTime: "< 1:40 h",
   },
 
   /* ----------------------------------------------------------------------
@@ -70,7 +70,7 @@ window.COACH = {
   paceZones: [
     { name: "Long / Locker",      pace: "7:15–8:00 /km", note: "Grundlage – fühlt sich fast zu langsam an" },
     { name: "Zügiger Dauerlauf",  pace: "6:40–7:05 /km", note: "Kontrolliert, leicht angestrengt" },
-    { name: "Renntempo (Ziel)",   pace: "7:20–7:50 /km", note: "Schnitt inkl. Gehpausen am 24.07." },
+    { name: "Renntempo (Ziel)",   pace: "6:55–7:05 /km", note: "Schnitt für unter 1:40 h (inkl. kurzer Gehpausen)" },
     { name: "Schwelle / Tempo",   pace: "6:10–6:35 /km", note: "Comfortably hard, nur kurze Blöcke" },
     { name: "Steigerungen",       pace: "5:45–6:05 /km", note: "15–20 s flott, locker, nicht sprinten" },
   ],
@@ -141,7 +141,7 @@ window.COACH = {
       focus: "Höchster Umfang. Die lange Einheit ist die Hauptprobe. Ziel: 3 Einheiten.",
       sessions: [
         { prio: 1, type: "long",  title: "Lange Einheit (Generalprobe)", detail: "ca. 11–12 km / ~1:45 h · Laufen 5' / Gehen 1' · Renn-Setup testen (Schuhe, Verpflegung, Startzeit 19 Uhr nachstellen)" },
-        { prio: 2, type: "tempo", title: "Renntempo-Gefühl", detail: "40–45 min: 4× (5 min @ Renntempo ~7:30 / 1 min Gehen)" },
+        { prio: 2, type: "tempo", title: "Renntempo-Gefühl", detail: "40–45 min: 4× (6 min @ Renntempo ~7:00 / 1 min Gehen) – so fühlt sich unter 1:40 an" },
         { prio: 3, type: "easy",  title: "Lockerer Lauf", detail: "35 min · Laufen 5' / Gehen 1'" },
         { prio: 4, type: "cross", title: "Mobility leicht (optional)", detail: "15 min, locker halten" },
       ],
@@ -155,7 +155,7 @@ window.COACH = {
       sessions: [
         { prio: 2, type: "easy",  title: "Mo/Di – Locker + Steigerungen", detail: "30 min locker + 4× 15 s flott · danach 1–2 Ruhetage" },
         { prio: 3, type: "easy",  title: "Do – Beine wecken (optional)", detail: "20 min sehr locker · oder komplett ruhen" },
-        { prio: 1, type: "race",  title: "Fr 24.07., 19:00 – ÄGERISEELAUF 14,1 km", detail: "Run/Walk 4–5' / 1' · locker starten · an jeder Verpflegung (km 3,5 / 5,5 / 7,0 / 11,5) gehen & trinken · die ersten 3 km bewusst zu langsam!" },
+        { prio: 1, type: "race",  title: "Fr 24.07., 19:00 – ÄGERISEELAUF 14,1 km", detail: "Ziel < 1:40 h (Schnitt ~7:00/km). Run/Walk 4–5' / 1' · die ersten 3 km bewusst langsam (>7:10) · ab km 7 Tempo halten oder leicht steigern · an den Verpflegungen (km 3,5/5,5/7,0/11,5) kurz gehen & trinken." },
       ],
     },
   ],
